@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.tencent.matrix:matrix-trace-canary:0.8.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/30d0161973b5849a2891b1c1057c8001/jetified-matrix-trace-canary-0.8.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/30d0161973b5849a2891b1c1057c8001/jetified-matrix-trace-canary-0.8.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/30d0161973b5849a2891b1c1057c8001/jetified-matrix-trace-canary-0.8.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.matrix/matrix-trace-canary/0.8.0/380feb25bb83ae1073e9fa449c6468eb7485e6c8/matrix-trace-canary-0.8.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.matrix/matrix-trace-canary/0.8.0/df9ac1e81de99cf12bcdf5e5716cb2c377ae3e31/matrix-trace-canary-0.8.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

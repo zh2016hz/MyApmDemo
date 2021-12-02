@@ -1,2 +1,3 @@
+include ':matrix_trace_canary'
 include ':app'
 rootProject.name = "MyApmDemo"

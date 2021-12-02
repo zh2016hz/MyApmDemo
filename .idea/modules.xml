@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MyApmDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/MyApmDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MyApmDemo.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MyApmDemo.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/matrix_trace_canary/MyApmDemo.matrix_trace_canary.iml" filepath="$PROJECT_DIR$/.idea/modules/matrix_trace_canary/MyApmDemo.matrix_trace_canary.iml" />
     </modules>
   </component>
 </project>

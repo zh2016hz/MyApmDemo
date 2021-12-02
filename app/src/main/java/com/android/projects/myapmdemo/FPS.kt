@@ -2,6 +2,8 @@ package com.android.projects.myapmdemo
 
 import android.content.Context
 import android.util.Log
+import com.android.projects.myapmdemo.view.RabbitUiEvent
+import com.android.projects.myapmdemo.view.RabbitUiKernal
 import com.susion.rabbit.base.config.RabbitMonitorConfig
 import com.susion.rabbit.monitor.RabbitMonitor
 import com.susion.rabbit.monitor.core.ChoreographerMonitorCenter
@@ -25,6 +27,9 @@ class FPS :
 
     fun open() {
         ChoreographerMonitorCenter.addDetailedFrameUpdateListener(this)
+    }
+    fun close(){
+        ChoreographerMonitorCenter.removeDetailedFrameUpdateListener(this)
     }
 
     override fun doFrame(
@@ -52,8 +57,8 @@ class FPS :
             val radio =
                     TimeUnit.NANOSECONDS.convert(1, TimeUnit.SECONDS) * 1.0f / FPS_COLLECT_PERIOD_NS
             val fps = min(60f, collectFrame * radio)
-//            RabbitMonitor.uiEventListener?.updateUi(RabbitUiEvent.MSG_UPDATE_FPS, fps)
-            Log.e("FPS",fps.toString())
+            RabbitMonitor.uiEventListener?.updateUi(RabbitUiEvent.MSG_UPDATE_FPS, fps)
+            Log.e("FPS","当前贞：" +fps.toString())
             lastTotalFrameNs = totalFrameNs
             lastTotalFrameNumber = totalFrameNumber
         }else{
@@ -65,5 +70,14 @@ class FPS :
         }
 
     }
+
+//    private fun configMonitor() {
+//        //加载 gradle plugin init
+//        RabbitMonitor.uiEventListener = object : RabbitMonitor.UIEventListener {
+//            override fun updateUi(type: Int, value: Any) {
+//                RabbitUiKernal.refreshFloatingViewUi(type, value)
+//            }
+//        }
+//    }
 
 }
